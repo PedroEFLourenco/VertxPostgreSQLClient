@@ -1,8 +1,8 @@
 {
 	"url": "jdbc:postgresql://HOST:PORT/",
 	"driver_class": "org.postgresql.Driver",
-	"user": "USER",
-	"password": "PASS",
+	"user": "",
+	"password": "",
 	
 	"http.port" : 80
 }

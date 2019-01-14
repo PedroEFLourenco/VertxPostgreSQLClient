@@ -1,6 +1,7 @@
 import java.util.Optional;
 
 import io.vertx.core.json.JsonArray;
+import utils.VertxJsonValidator;
 
 public class Experiences {
 
@@ -59,8 +60,7 @@ public class Experiences {
 		Experiences test = new Experiences();
 		String jsonBody = "[[\"Teste9\",null]]";
 		JsonArray valuesArray = new JsonArray(jsonBody);
-
-		System.out.println(test.valuesToSQLString(valuesArray));
+		
 
 	}
 }
