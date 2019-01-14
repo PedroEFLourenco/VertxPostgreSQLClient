@@ -1,0 +1,4 @@
+build/libs/*
+build/distributions/*
+build/scripts/*
+build/scriptsShadow/*

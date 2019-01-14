@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="bin/main" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/test" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-jdbc-client/3.6.2/576abc5d7e5f00afd297c3c9a8555173dab72014/vertx-jdbc-client-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-jdbc-client/3.6.2/436c8a1c6e6edfdb729701f3f09e92b62dbac300/vertx-jdbc-client-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web/3.6.2/b14cc65e87be53a1ea1c960af76920042533311e/vertx-web-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web/3.6.2/aaf3d752f9a8e8f78d150fad46be24627d45b28b/vertx-web-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-sql-common/3.6.2/8cf941d3a3be1d9a9dbe415ee934f98912a06ecc/vertx-sql-common-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-sql-common/3.6.2/6d6765d3e33523174d91cf50d8e6866d2f447e8e/vertx-sql-common-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web-common/3.6.2/9dfbd272a1fb4754270929d7085a190e7f66f905/vertx-web-common-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web-common/3.6.2/127989bd7a29732b1140e941363284bc7f7d28c8/vertx-web-common-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-auth-common/3.6.2/722bf37d3c9c6a2b88ff9827be73de703de21061/vertx-auth-common-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-auth-common/3.6.2/742ecc0dc592dfd351f88806a629262e6105bfb2/vertx-auth-common-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-core/3.6.2/988227077d06afc711b471680bd8af045a8aa784/vertx-core-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-core/3.6.2/51c7da709f8f659f2bab50533debceeec8fb58d3/vertx-core-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.11.1/592a48674c926b01a9a747c7831bcd82a9e6d6e4/log4j-core-2.11.1.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.11.1/23bef4ea0494ba9fb9835df0e3e23c6883d8d545/log4j-core-2.11.1-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.2.5/951b7eda125f3137538a94e2cbdcf744088ad4c2/postgresql-42.2.5.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.2.5/38646ec680de3cdaad06738686a3bc454022345/postgresql-42.2.5-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.json/json/20180813/8566b2b0391d9d4479ea225645c6ed47ef17fe41/json-20180813.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.json/json/20180813/60753006d96d5fc85b61b0897f3326b5c4e1c4f0/json-20180813-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.mchange/c3p0/0.9.5.2/5f86cb6130bc6e8475615ed82d5b5e6fb226a86a/c3p0-0.9.5.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.mchange/c3p0/0.9.5.2/147cbd16cde386d978a7d5f23f42778102a08cfc/c3p0-0.9.5.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.30.Final/2da92f518409904954d3e8dcc42eb6a562a70302/netty-codec-http2-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.30.Final/4028134a4c155c6f83972912b9b5370a4b0a656a/netty-codec-http2-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.30.Final/ecc076332ed103411347f4806a44ee32d9d9cb5f/netty-handler-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.30.Final/537c70ab45c414e08aacb8c2c17e407752073ce7/netty-handler-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.30.Final/1baa1568fa936caddca0fae96fdf127fd5cbad16/netty-handler-proxy-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.30.Final/88ef22e28a471ffe6f845c6971b56a7fcc446199/netty-handler-proxy-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.30.Final/3f4bcf2e9fff1361ac9ad0bd27a10a1b31399294/netty-resolver-dns-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.30.Final/a86a3f1b20971c1589b4d4cd4f3dbbf668db9c63/netty-resolver-dns-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.30.Final/1384c630e8a0eeef33ad12a28791dce6e1d8767c/netty-codec-http-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.30.Final/218b33bae3a4e5cebe489ff65647e9ec9de58ef1/netty-codec-http-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.30.Final/ea272e3bb281d3a91d27278f47e61b4de285cc27/netty-codec-socks-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.30.Final/f9a0e618f41ae84734a745880d0cfd9a6d1d6f6f/netty-codec-socks-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.30.Final/7d28ce324f6cd5ae4ddd7f3e5027e2a7f126740b/netty-codec-dns-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.30.Final/a364fcfdf42c90592e1660d6a3b15ad4c7844806/netty-codec-dns-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.30.Final/515c8f609aaca28a94f984d89a9667dd3359c1b1/netty-codec-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.30.Final/5c9148c433a3d5869981aac0b5d8ee1b83f727e6/netty-codec-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.30.Final/3d27bb432a3b125167ac161b26415ad29ec17f02/netty-transport-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.30.Final/de1b7fc8e484050f5879722dfe0e13378229bee4/netty-transport-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.30.Final/597adb653306470fb3ec1af3c0f3f30a37b1310a/netty-buffer-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.30.Final/e7e5789c789b4f3e6069ee2ed9e5e102c7868ad8/netty-buffer-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.30.Final/5106fd687066ffd712e5295d32af4e2ac6482613/netty-resolver-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.30.Final/f2006616cc4c05263eb2c8cf3187109e1710b6dd/netty-resolver-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.30.Final/5dca0c34d8f38af51a2398614e81888f51cf811a/netty-common-4.1.30.Final.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.30.Final/bbe24e82b2e153dc9bfaa01c63c0dd47c71f2e59/netty-common-4.1.30.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.7/e6faad47abd3179666e89068485a1b88a195ceb7/jackson-databind-2.9.7.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.7/26d2e8a615ae6d766bbaed952a9cc286f6860faf/jackson-databind-2.9.7-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.7/4b7f0e0dc527fab032e9800ed231080fdc3ac015/jackson-core-2.9.7.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.7/478a76e0ca46b25648abce6ad4858cde5e8488ec/jackson-core-2.9.7-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-bridge-common/3.6.2/3a6e1c3244e54861ce33d692f77e410572445c9/vertx-bridge-common-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-bridge-common/3.6.2/aafa56d2a7d7974fec8b8a32e1dedb1c16f75ace/vertx-bridge-common-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.1/268f0fe4df3eefe052b57c87ec48517d64fb2a10/log4j-api-2.11.1.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.1/acf35297ef03716fc14e11e2978d7c749ed3f7e5/log4j-api-2.11.1-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.mchange/mchange-commons-java/0.2.11/2a6a6c1fe25f28f5a073171956ce6250813467ef/mchange-commons-java-0.2.11.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.mchange/mchange-commons-java/0.2.11/33a53955501fa830ecfc98d6ae611c6dc451946c/mchange-commons-java-0.2.11-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/a0ad4e203304ccab7e01266fa814115850edb8a9/jackson-annotations-2.9.0-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+</classpath>
