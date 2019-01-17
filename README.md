@@ -2,7 +2,7 @@
 Vert.x Application - Asynchronous JDBC Client for PostgreSQL 
 
 [![Vertx](https://img.shields.io/badge/vert.x-3.6.2-purple.svg)](link="https://vertx.io")
-
+![Coverage](https://img.shields.io/badge/Coverage-89%25-green.svg)]
 
 
 ## Client Configuration
