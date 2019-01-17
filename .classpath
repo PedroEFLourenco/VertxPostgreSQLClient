@@ -12,8 +12,13 @@
 			<attribute name="gradle_used_by_scope" value="test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="src" output="bin/main" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-jdbc-client/3.6.2/576abc5d7e5f00afd297c3c9a8555173dab72014/vertx-jdbc-client-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-jdbc-client/3.6.2/436c8a1c6e6edfdb729701f3f09e92b62dbac300/vertx-jdbc-client-3.6.2-sources.jar">
 		<attributes>
@@ -155,7 +160,27 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-unit/3.6.2/d2df897a3a4a3dc72a6676f26cf6272d487fbf08/vertx-unit-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-unit/3.6.2/2bf115c48d70a9aa88037ca08d691b9c95e80c91/vertx-unit-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-config/3.6.2/f55a8c3d9d418cc3efa453475df2ee6ec87918e3/vertx-config-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-config/3.6.2/8b0c8510dad5e8cf148261b17be39c99a68bd685/vertx-config-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web-client/3.6.2/4176a033fa382b22c43b6604eb63f7280bc0ccf9/vertx-web-client-3.6.2.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-web-client/3.6.2/c3561ff6f88f4dc2b780b581cfeacd90bd04651a/vertx-web-client-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-all/1.10.19/539df70269cc254a58cccc5d8e43286b4a73bf30/mockito-all-1.10.19.jar" sourcepath="/Users/pedrolourenco/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-all/1.10.19/8269667b73d9616600359a9b0ba1b1c7d0cf7a97/mockito-all-1.10.19-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 		</attributes>
