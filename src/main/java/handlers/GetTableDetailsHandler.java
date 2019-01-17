@@ -4,6 +4,8 @@ import java.util.Optional;
 
 import org.apache.logging.log4j.Logger;
 
+import enums.Messages;
+import enums.StatusCodes;
 import io.vertx.core.Future;
 import io.vertx.core.Handler;
 import io.vertx.core.json.JsonArray;
@@ -11,8 +13,6 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.ext.jdbc.JDBCClient;
 import io.vertx.ext.sql.SQLConnection;
 import io.vertx.ext.web.RoutingContext;
-import utils.Messages;
-import utils.StatusCodes;
 
 
 /**
@@ -171,7 +171,7 @@ public class GetTableDetailsHandler implements Handler<RoutingContext> {
 					tableDetails.put("hasRules",ja.getBoolean(5));
 					tableDetails.put("hasTriggers",ja.getBoolean(6));
 				}
-				logger.error("GetTableDetailsHandler -  " + Messages.QUERY_EXECUTION_SUCCESS.getValue());
+				logger.info("GetTableDetailsHandler -  " + Messages.QUERY_EXECUTION_SUCCESS.getValue());
 				sqlQueryFuture.handle(Future.succeededFuture(new JsonObject().put("results",tableDetails)));
 			}
 			else

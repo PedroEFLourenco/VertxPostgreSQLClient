@@ -4,14 +4,14 @@ import java.util.Optional;
 
 import org.apache.logging.log4j.Logger;
 
+import enums.Messages;
+import enums.StatusCodes;
 import io.vertx.core.Future;
 import io.vertx.core.Handler;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.jdbc.JDBCClient;
 import io.vertx.ext.sql.SQLConnection;
 import io.vertx.ext.web.RoutingContext;
-import utils.Messages;
-import utils.StatusCodes;
 import utils.VertxJsonValidator;
 /**
  * 
@@ -22,10 +22,6 @@ import utils.VertxJsonValidator;
  * 
  * The idea behind this route is to provide the possibility for data deletion from a table.
  * Also, a request made to the route must include a JSON object specifying the where condition for the delete to be made.
- * 
- * The only real requirement for the body is that it is valid JSON. Meaning that, if it is valid JSON but the where condition is missing, the delete defaults to full delete.
- * This implementation path was chosen to facilitate usage in the case of "non-selective" objective. 
- * Meaning that, if you want to delete the entire table, no fancy json will be needed, just put {} as message body.
  * 
  * @author pedrolourenco
  *
@@ -187,8 +183,9 @@ public class DeleteDataHandler implements Handler<RoutingContext> {
 
 	/**
 	 * 
-	 * Method responsible for validating the request body for both JSON validity and existence (both through the VertxJsonValidator.isValidJSON method), and creation of the SQL Statement to be passed to the database.
-	 * If the body was present and valid JSON, but did not contain a where condition, the statement will default to general delete from.
+	 * Method responsible for validating the request body for both JSON validity and arguments existence (both through the validateJsonBody method), and creation of the SQL Statement to be passed to the database.
+	 * If the body was present and valid JSON, but did not contain a where condition, no statement will be submitted to the database
+	 * x.
 	 * If the body was present, valid JSON and did contain a where condition, the where condition will be added to the statement.
 	 * 
 	 * @param tableSchema name of the schema for the table
@@ -200,7 +197,7 @@ public class DeleteDataHandler implements Handler<RoutingContext> {
 	{
 		String whereCondition;
 
-		if (VertxJsonValidator.isValidJSON(requestBody))
+		if (validateJsonBody(requestBody))
 		{
 			JsonObject bodyAsJson = new JsonObject(requestBody);
 			whereCondition = Optional.ofNullable(bodyAsJson.getString("where")).orElse(";");
@@ -217,5 +214,25 @@ public class DeleteDataHandler implements Handler<RoutingContext> {
 			logger.error("DeleteDataHandler - " + Messages.INVALID_BODY_ERROR.getValue());
 			return null;
 		}
+	}
+
+	
+	/**
+	 * This method validates if the request body is valid JSON, and afterwards if the expected arguments are present in there.
+	 * 
+	 * 
+	 * @param jsonBody Body of the request, as a string
+	 * @return true if body is valid JSON and contains all the expected arguments, false otherwise.
+	 */
+	private boolean validateJsonBody(String jsonBody)
+	{
+		if(VertxJsonValidator.isValidJSON(jsonBody))
+		{
+			if(Optional.ofNullable(new JsonObject(jsonBody).getString("where")).isPresent())
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 }

@@ -2,6 +2,9 @@ package handlers;
 
 import java.util.Optional;
 import org.apache.logging.log4j.Logger;
+
+import enums.Messages;
+import enums.StatusCodes;
 import io.vertx.core.Future;
 import io.vertx.core.Handler;
 import io.vertx.core.json.JsonArray;
@@ -9,8 +12,6 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.ext.jdbc.JDBCClient;
 import io.vertx.ext.sql.SQLConnection;
 import io.vertx.ext.web.RoutingContext;
-import utils.Messages;
-import utils.StatusCodes;
 import utils.VertxJsonValidator;
 /**
  * 
@@ -20,7 +21,7 @@ import utils.VertxJsonValidator;
  * A request will only be forwarded to this handler if its URL exactly matches this structure.
  * 
  * The idea behind this route is to provide the possibility for data deletion from a table.
- * Also, a request made to the route must include a JSON object specifying the where condition for the delete to be made.
+ * Also, a request made to the route should include a JSON object specifying the select clause and where condition for the query to be made.
  * 
  * The only real requirement for the body is that it is valid JSON. Meaning that, if it is valid JSON but the expected values are missing, the query defaults to full table select.
  * This implementation path was chosen to facilitate usage in the case of "non-selective" objective. 
@@ -44,7 +45,7 @@ public class GetDataHandler implements Handler<RoutingContext> {
 		this.jdbc = jdbc;
 		this.logger = logger;
 	}
-
+	
 	/**
 	 * 
 	 * Central method to the management of requests made to the route this Handlers manages.

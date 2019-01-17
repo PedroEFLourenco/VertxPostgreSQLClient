@@ -2,6 +2,9 @@ package handlers;
 
 import java.util.Optional;
 import org.apache.logging.log4j.Logger;
+
+import enums.Messages;
+import enums.StatusCodes;
 import io.vertx.core.Future;
 import io.vertx.core.Handler;
 import io.vertx.core.json.JsonArray;
@@ -10,8 +13,6 @@ import io.vertx.ext.jdbc.JDBCClient;
 import io.vertx.ext.sql.SQLConnection;
 import io.vertx.ext.web.RoutingContext;
 import utils.VertxJsonValidator;
-import utils.Messages;
-import utils.StatusCodes;
 import utils.SQLStringOperations;
 
 /**
@@ -23,9 +24,6 @@ import utils.SQLStringOperations;
  * 
  * The idea behind this route is to provide the possibility for data deletion from a table.
  * Also, a request made to the route must include a JSON object specifying the where condition for the delete to be made.
- * 
- * The only real requirement for the body is that it is valid JSON. Meaning that, if it is valid JSON but the expected values are missing, no statement will be executed.
- * This implementation path was chosen to diminish mistaken insert into the table in case of imperfect request body.
  * 
  * @author pedrolourenco
  *
@@ -87,7 +85,7 @@ public class InsertDataHandler implements Handler<RoutingContext> {
 			}
 			else
 			{
-				logger.error("DeleteDataHandler - "+ Messages.DB_CONNECTION_ERROR.getValue() + connection.cause());
+				logger.error("InsertDataHandler - "+ Messages.DB_CONNECTION_ERROR.getValue() + connection.cause());
 				sendBackResponse(context, new JsonObject(), StatusCodes.FAILED);
 			}
 		});
@@ -156,7 +154,7 @@ public class InsertDataHandler implements Handler<RoutingContext> {
 		SQLConnection conn = result;
 
 		String sqlStatement = buildSQL(schemaName, tableName, requestBody);
-		
+
 		if (Optional.ofNullable(sqlStatement).isPresent())
 		{
 			logger.info("InsertDataHandler - SQL Insert Statement: \n" + sqlStatement);
@@ -185,8 +183,8 @@ public class InsertDataHandler implements Handler<RoutingContext> {
 
 	/**
 	 * 
-	 * Method responsible for validating the request body for both JSON validity and existence (both through the VertxJsonValidator.isValidJSON method), and creation of the SQL Statement to be passed to the database.
-	 * If the body was present and valid JSON, but did not contain columns to insert or values condition, the statement will not be submitted to the database.
+	 * Method responsible for validating the request body for both JSON validity and arguments existence (both through the validateJsonBody method), and creation of the SQL Statement to be passed to the database.
+	 * If the body was present and valid JSON, but did not contain columns to insert or values condition, no statement will be submitted to the database, meaning nothing will be inserted.
 	 * If the body was present, valid JSON and did contain both conditions, the columns to select and values condition will be added to the statement.
 	 * 
 	 * @param tableSchema name of the schema for the table
@@ -199,7 +197,7 @@ public class InsertDataHandler implements Handler<RoutingContext> {
 		String columnsToInsert;
 		String insertValues;
 
-		if (VertxJsonValidator.isValidJSON(requestBody))
+		if (validateJsonBody(requestBody))
 		{
 			JsonObject bodyAsJson = new JsonObject(requestBody);
 			columnsToInsert = Optional.ofNullable(bodyAsJson.getString("columns")).orElse("");
@@ -218,5 +216,25 @@ public class InsertDataHandler implements Handler<RoutingContext> {
 			logger.info("InsertDataHandler - " + Messages.INVALID_BODY_ERROR.getValue());
 			return null;
 		}
+	}
+
+	/**
+	 * This method validates if the request body is valid JSON, and afterwards if the expected arguments are present in there.
+	 * 
+	 * 
+	 * @param jsonBody Body of the request, as a string
+	 * @return true if body is valid JSON and contains all the expected arguments, false otherwise.
+	 */
+	private boolean validateJsonBody(String jsonBody)
+	{
+		if(VertxJsonValidator.isValidJSON(jsonBody))
+		{
+			JsonObject body = new JsonObject(jsonBody);
+			if(Optional.ofNullable(body.getString("columns")).isPresent() && Optional.ofNullable(body.getJsonArray("values")).isPresent())
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 }

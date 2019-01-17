@@ -3,6 +3,9 @@ package handlers;
 import java.util.Optional;
 
 import org.apache.logging.log4j.Logger;
+
+import enums.Messages;
+import enums.StatusCodes;
 import io.vertx.core.Future;
 import io.vertx.core.Handler;
 import io.vertx.core.json.JsonArray;
@@ -10,8 +13,6 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.ext.jdbc.JDBCClient;
 import io.vertx.ext.sql.SQLConnection;
 import io.vertx.ext.web.RoutingContext;
-import utils.Messages;
-import utils.StatusCodes;
 
 
 /**

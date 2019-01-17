@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.CheckAliveTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-01-17T12:22:58" hostname="MacBook-Pro-de-Pedro.local" time="0.012">
+  <properties/>
+  <testcase name="checkAliveStatusCodeTest" classname="test.CheckAliveTest" time="0.005"/>
+  <testcase name="checkAliveFormatTest" classname="test.CheckAliveTest" time="0.004"/>
+  <testcase name="checkAliveContentTest" classname="test.CheckAliveTest" time="0.003"/>
+  <system-out><![CDATA[12:22:58.934 [vert.x-eventloop-thread-0] INFO  Application - PostgreSQL Connectivity -> [OK]
+12:22:58.936 [vert.x-eventloop-thread-0] INFO  Application - Starting HTTP Server...
+12:22:58.938 [vert.x-eventloop-thread-0] INFO  Application - HTTP Server is Running!
+12:22:58.957 [vert.x-eventloop-thread-0] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-0
+12:22:58.957 [vert.x-eventloop-thread-4] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-4
+12:22:58.957 [vert.x-eventloop-thread-7] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-7
+12:22:58.957 [vert.x-eventloop-thread-10] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-10
+]]></system-out>
+  <system-err><![CDATA[Jan 17, 2019 12:22:58 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge157a0pglw1h1ar2mve|6b29b786, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge157a0pglw1h1ar2mve|6b29b786, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://127.0.0.1:5431/, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+]]></system-err>
+</testsuite>

@@ -3,10 +3,10 @@
 -doctitle 'VertxPostgreSQLClient 1.0-SNAPSHOT API'
 -quiet 
 -windowtitle 'VertxPostgreSQLClient 1.0-SNAPSHOT API'
-'/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/utils/StringOperations.java'
+'/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/enums/Messages.java'
+'/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/enums/StatusCodes.java'
 '/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/utils/VertxJsonValidator.java'
-'/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/utils/Messages.java'
-'/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/utils/StatusCodes.java'
+'/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/utils/SQLStringOperations.java'
 '/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/application/PostgreSQLClientVerticle.java'
 '/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/handlers/InsertDataHandler.java'
 '/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/handlers/GetTablesHandler.java'
@@ -15,4 +15,3 @@
 '/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/handlers/DeleteDataHandler.java'
 '/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/handlers/IndexHandler.java'
 '/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/handlers/GetTableDetailsHandler.java'
-'/Users/pedrolourenco/Documents/MyCujoo/EclipseWorkspace/VertxPostgreSQLClient/src/main/java/Experiences.java'

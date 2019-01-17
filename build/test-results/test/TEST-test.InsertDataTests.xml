@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.InsertDataTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-01-17T12:23:00" hostname="MacBook-Pro-de-Pedro.local" time="0.775">
+  <properties/>
+  <testcase name="insertDataComposedTest" classname="test.InsertDataTests" time="0.173"/>
+  <testcase name="insertDataContentTest1" classname="test.InsertDataTests" time="0.068"/>
+  <testcase name="insertDataContentTest2" classname="test.InsertDataTests" time="0.008"/>
+  <testcase name="InsertDataStatusCodeTest1" classname="test.InsertDataTests" time="0.005"/>
+  <testcase name="InsertDataStatusCodeTest2" classname="test.InsertDataTests" time="0.004"/>
+  <testcase name="InsertDataStatusCodeTest3" classname="test.InsertDataTests" time="0.515"/>
+  <system-out><![CDATA[12:23:00.424 [vert.x-eventloop-thread-1] INFO  Application - PostgreSQL Connectivity -> [OK]
+12:23:00.425 [vert.x-eventloop-thread-1] INFO  Application - Starting HTTP Server...
+12:23:00.427 [vert.x-eventloop-thread-1] INFO  Application - HTTP Server is Running!
+12:23:00.430 [vert.x-eventloop-thread-1] INFO  Application - GetDataHandler - Handling Data Query Request
+12:23:00.431 [vert.x-eventloop-thread-1] DEBUG Application - GetDataHandler - Request Body: {}
+12:23:00.431 [vert.x-eventloop-thread-1] INFO  Application - GetDataHandler - Query passed to DB: 
+SELECT *
+FROM "public"."insert_data_test" 
+ ;
+12:23:00.481 [vert.x-eventloop-thread-1] INFO  Application - GetDataHandler - number of rows in query results: 0
+12:23:00.487 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - Handling Data Insert Request
+12:23:00.488 [vert.x-eventloop-thread-1] DEBUG Application - InsertDataHandler - Request Body: {"columns":"column1,column2","values":[["String5ForColumn1",true],["String6ForColumn1",null]]}
+12:23:00.489 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - SQL Insert Statement: 
+INSERT INTO public.insert_data_test (column1,column2) VALUES ('String5ForColumn1',true),
+('String6ForColumn1',null)
+;
+12:23:00.543 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - SQL Statement successfully executed 
+12:23:00.547 [vert.x-eventloop-thread-1] INFO  Application - GetDataHandler - Handling Data Query Request
+12:23:00.547 [vert.x-eventloop-thread-1] DEBUG Application - GetDataHandler - Request Body: {}
+12:23:00.547 [vert.x-eventloop-thread-1] INFO  Application - GetDataHandler - Query passed to DB: 
+SELECT *
+FROM "public"."insert_data_test" 
+ ;
+12:23:00.598 [vert.x-eventloop-thread-1] INFO  Application - GetDataHandler - number of rows in query results: 2
+12:23:00.609 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - Handling Data Insert Request
+12:23:00.609 [vert.x-eventloop-thread-1] DEBUG Application - InsertDataHandler - Request Body: {"columns":"column1,column2","values":[["String1ForColumn1",true],["String2ForColumn1",null]]}
+12:23:00.610 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - SQL Insert Statement: 
+INSERT INTO public.insert_data_test (column1,column2) VALUES ('String1ForColumn1',true),
+('String2ForColumn1',null)
+;
+12:23:00.667 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - SQL Statement successfully executed 
+12:23:00.677 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - Handling Data Insert Request
+12:23:00.677 [vert.x-eventloop-thread-1] DEBUG Application - InsertDataHandler - Request Body: {"values":[["String1ForColumn1",true],["String2ForColumn1",null]]}
+12:23:00.677 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - Request Body is not valid
+12:23:00.678 [vert.x-eventloop-thread-1] ERROR Application - Request Body is not valid
+{
+  "error" : "Request Body is not valid"
+}
+12:23:00.682 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - Handling Data Insert Request
+12:23:00.682 [vert.x-eventloop-thread-1] DEBUG Application - InsertDataHandler - Request Body: {"values":[["String1ForColumn1",true],["String2ForColumn1",null]]}
+12:23:00.683 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - Request Body is not valid
+12:23:00.683 [vert.x-eventloop-thread-1] ERROR Application - Request Body is not valid
+12:23:00.686 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - Handling Data Insert Request
+12:23:00.687 [vert.x-eventloop-thread-1] DEBUG Application - InsertDataHandler - Request Body: ""
+12:23:00.687 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - Request Body is not valid
+12:23:00.687 [vert.x-eventloop-thread-1] ERROR Application - Request Body is not valid
+12:23:00.690 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - Handling Data Insert Request
+12:23:00.690 [vert.x-eventloop-thread-1] DEBUG Application - InsertDataHandler - Request Body: {"columns":"column1,column2","values":[["String3ForColumn1",true],["String4ForColumn1",null]]}
+12:23:01.147 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - SQL Insert Statement: 
+INSERT INTO public.insert_data_test (column1,column2) VALUES ('String3ForColumn1',true),
+('String4ForColumn1',null)
+;
+12:23:01.200 [vert.x-eventloop-thread-1] INFO  Application - InsertDataHandler - SQL Statement successfully executed 
+12:23:01.211 [vert.x-eventloop-thread-1] DEBUG io.netty.buffer.PoolThreadCache - Freed 5 thread-local buffer(s) from thread: vert.x-eventloop-thread-1
+12:23:01.212 [vert.x-eventloop-thread-4] DEBUG io.netty.buffer.PoolThreadCache - Freed 4 thread-local buffer(s) from thread: vert.x-eventloop-thread-4
+12:23:01.212 [vert.x-eventloop-thread-7] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-7
+12:23:01.213 [vert.x-eventloop-thread-10] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-10
+]]></system-out>
+  <system-err><![CDATA[Jan 17, 2019 12:22:59 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge157a0pglw1h1ar2mve|2526251d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge157a0pglw1h1ar2mve|2526251d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://127.0.0.1:5431/, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+]]></system-err>
+</testsuite>

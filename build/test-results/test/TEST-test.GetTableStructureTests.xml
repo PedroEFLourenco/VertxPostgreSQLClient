@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.GetTableStructureTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-17T12:23:02" hostname="MacBook-Pro-de-Pedro.local" time="0.298">
+  <properties/>
+  <testcase name="getTableStructureStatusCodeTest" classname="test.GetTableStructureTests" time="0.085"/>
+  <testcase name="getTableStructureContentTest" classname="test.GetTableStructureTests" time="0.069"/>
+  <testcase name="getTableStructureFormatTest" classname="test.GetTableStructureTests" time="0.068"/>
+  <testcase name="getTableStructureContentExistenceTest" classname="test.GetTableStructureTests" time="0.076"/>
+  <system-out><![CDATA[12:23:02.577 [vert.x-eventloop-thread-1] INFO  Application - PostgreSQL Connectivity -> [OK]
+12:23:02.578 [vert.x-eventloop-thread-1] INFO  Application - Starting HTTP Server...
+12:23:02.580 [vert.x-eventloop-thread-1] INFO  Application - HTTP Server is Running!
+12:23:02.584 [vert.x-eventloop-thread-1] INFO  Application - GetTableStructureHandler - Handling table structure request.
+12:23:02.661 [vert.x-eventloop-thread-1] INFO  Application - Size of query result: 2
+12:23:02.661 [vert.x-eventloop-thread-1] ERROR Application - GetTableDetailsHandler -  SQL Statement successfully executed 
+12:23:02.670 [vert.x-eventloop-thread-1] INFO  Application - GetTableStructureHandler - Handling table structure request.
+12:23:02.731 [vert.x-eventloop-thread-1] INFO  Application - Size of query result: 2
+12:23:02.731 [vert.x-eventloop-thread-1] ERROR Application - GetTableDetailsHandler -  SQL Statement successfully executed 
+[ {
+  "columnName" : "column1",
+  "ordinalPosition" : 1,
+  "isNullable" : "NO",
+  "dataType" : "character varying",
+  "fieldLength" : null,
+  "isPK" : true
+}, {
+  "columnName" : "column2",
+  "ordinalPosition" : 2,
+  "isNullable" : "YES",
+  "dataType" : "date",
+  "fieldLength" : null,
+  "isPK" : false
+} ]
+12:23:02.740 [vert.x-eventloop-thread-1] INFO  Application - GetTableStructureHandler - Handling table structure request.
+12:23:02.800 [vert.x-eventloop-thread-1] INFO  Application - Size of query result: 2
+12:23:02.800 [vert.x-eventloop-thread-1] ERROR Application - GetTableDetailsHandler -  SQL Statement successfully executed 
+12:23:02.807 [vert.x-eventloop-thread-1] INFO  Application - GetTableStructureHandler - Handling table structure request.
+12:23:02.877 [vert.x-eventloop-thread-1] INFO  Application - Size of query result: 2
+12:23:02.877 [vert.x-eventloop-thread-1] ERROR Application - GetTableDetailsHandler -  SQL Statement successfully executed 
+12:23:02.885 [vert.x-eventloop-thread-1] DEBUG io.netty.buffer.PoolThreadCache - Freed 4 thread-local buffer(s) from thread: vert.x-eventloop-thread-1
+12:23:02.885 [vert.x-eventloop-thread-4] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-4
+12:23:02.885 [vert.x-eventloop-thread-7] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-7
+12:23:02.885 [vert.x-eventloop-thread-10] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-10
+]]></system-out>
+  <system-err><![CDATA[Jan 17, 2019 12:23:02 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge157a0pglw1h1ar2mve|34ee924b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.postgresql.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge157a0pglw1h1ar2mve|34ee924b, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://127.0.0.1:5431/, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+]]></system-err>
+</testsuite>

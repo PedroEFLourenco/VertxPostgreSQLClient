@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class test.GetTableStructureTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class test.GetTableStructureTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/test.html">test</a> &gt; GetTableStructureTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.298s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getTableStructureContentExistenceTest</td>
+<td class="success">0.076s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getTableStructureContentTest</td>
+<td class="success">0.069s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getTableStructureFormatTest</td>
+<td class="success">0.068s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getTableStructureStatusCodeTest</td>
+<td class="success">0.085s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>12:23:02.577 [vert.x-eventloop-thread-1] INFO  Application - PostgreSQL Connectivity -&gt; [OK]
+12:23:02.578 [vert.x-eventloop-thread-1] INFO  Application - Starting HTTP Server...
+12:23:02.580 [vert.x-eventloop-thread-1] INFO  Application - HTTP Server is Running!
+12:23:02.584 [vert.x-eventloop-thread-1] INFO  Application - GetTableStructureHandler - Handling table structure request.
+12:23:02.661 [vert.x-eventloop-thread-1] INFO  Application - Size of query result: 2
+12:23:02.661 [vert.x-eventloop-thread-1] ERROR Application - GetTableDetailsHandler -  SQL Statement successfully executed 
+12:23:02.670 [vert.x-eventloop-thread-1] INFO  Application - GetTableStructureHandler - Handling table structure request.
+12:23:02.731 [vert.x-eventloop-thread-1] INFO  Application - Size of query result: 2
+12:23:02.731 [vert.x-eventloop-thread-1] ERROR Application - GetTableDetailsHandler -  SQL Statement successfully executed 
+[ {
+  &quot;columnName&quot; : &quot;column1&quot;,
+  &quot;ordinalPosition&quot; : 1,
+  &quot;isNullable&quot; : &quot;NO&quot;,
+  &quot;dataType&quot; : &quot;character varying&quot;,
+  &quot;fieldLength&quot; : null,
+  &quot;isPK&quot; : true
+}, {
+  &quot;columnName&quot; : &quot;column2&quot;,
+  &quot;ordinalPosition&quot; : 2,
+  &quot;isNullable&quot; : &quot;YES&quot;,
+  &quot;dataType&quot; : &quot;date&quot;,
+  &quot;fieldLength&quot; : null,
+  &quot;isPK&quot; : false
+} ]
+12:23:02.740 [vert.x-eventloop-thread-1] INFO  Application - GetTableStructureHandler - Handling table structure request.
+12:23:02.800 [vert.x-eventloop-thread-1] INFO  Application - Size of query result: 2
+12:23:02.800 [vert.x-eventloop-thread-1] ERROR Application - GetTableDetailsHandler -  SQL Statement successfully executed 
+12:23:02.807 [vert.x-eventloop-thread-1] INFO  Application - GetTableStructureHandler - Handling table structure request.
+12:23:02.877 [vert.x-eventloop-thread-1] INFO  Application - Size of query result: 2
+12:23:02.877 [vert.x-eventloop-thread-1] ERROR Application - GetTableDetailsHandler -  SQL Statement successfully executed 
+12:23:02.885 [vert.x-eventloop-thread-1] DEBUG io.netty.buffer.PoolThreadCache - Freed 4 thread-local buffer(s) from thread: vert.x-eventloop-thread-1
+12:23:02.885 [vert.x-eventloop-thread-4] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-4
+12:23:02.885 [vert.x-eventloop-thread-7] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-7
+12:23:02.885 [vert.x-eventloop-thread-10] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: vert.x-eventloop-thread-10
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jan 17, 2019 12:23:02 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -&gt; 3, acquireRetryAttempts -&gt; 30, acquireRetryDelay -&gt; 1000, autoCommitOnClose -&gt; false, automaticTestTable -&gt; null, breakAfterAcquireFailure -&gt; false, checkoutTimeout -&gt; 0, connectionCustomizerClassName -&gt; null, connectionTesterClassName -&gt; com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -&gt; caller, dataSourceName -&gt; 1hge157a0pglw1h1ar2mve|34ee924b, debugUnreturnedConnectionStackTraces -&gt; false, description -&gt; null, driverClass -&gt; org.postgresql.Driver, extensions -&gt; {}, factoryClassLocation -&gt; null, forceIgnoreUnresolvedTransactions -&gt; false, forceSynchronousCheckins -&gt; false, forceUseNamedDriverClass -&gt; false, identityToken -&gt; 1hge157a0pglw1h1ar2mve|34ee924b, idleConnectionTestPeriod -&gt; 0, initialPoolSize -&gt; 3, jdbcUrl -&gt; jdbc:postgresql://127.0.0.1:5431/, maxAdministrativeTaskTime -&gt; 0, maxConnectionAge -&gt; 0, maxIdleTime -&gt; 0, maxIdleTimeExcessConnections -&gt; 0, maxPoolSize -&gt; 15, maxStatements -&gt; 0, maxStatementsPerConnection -&gt; 0, minPoolSize -&gt; 3, numHelperThreads -&gt; 3, preferredTestQuery -&gt; null, privilegeSpawnedThreads -&gt; false, properties -&gt; {user=******, password=******}, propertyCycle -&gt; 0, statementCacheNumDeferredCloseThreads -&gt; 0, testConnectionOnCheckin -&gt; false, testConnectionOnCheckout -&gt; false, unreturnedConnectionTimeout -&gt; 0, userOverrides -&gt; {}, usesTraditionalReflectiveProxies -&gt; false ]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at Jan 17, 2019 12:23:03 PM</p>
+</div>
+</div>
+</body>
+</html>
