@@ -1,6 +1,10 @@
 # VertxPostgreSQLClient
 Vert.x Application - Asynchronous JDBC Client for PostgreSQL 
 
+[![Vertx](https://img.shields.io/badge/vert.x-3.6.2-purple.svg)](link="https://vertx.io")
+
+
+
 ## Client Configuration
 Change the config.json file in src/main/resources as follows:
 
