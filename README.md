@@ -1,6 +1,8 @@
 # VertxPostgreSQLClient
 Vert.x Application - Asynchronous JDBC Client for PostgreSQL 
 
+This is my first experience using Vert.x and in Assynchronous programming. I am happy with the implementation but keep that in mind, in case something in here burns your eyes 😂
+
 ![Coverage](https://img.shields.io/badge/Coverage-89%25-green.svg)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 [![Vertx](https://img.shields.io/badge/vert.x-3.6.2-purple.svg)](link="https://vertx.io")
